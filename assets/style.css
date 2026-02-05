@@ -87,8 +87,11 @@ iframe {
 .container a {
   color: var(--accent);
   text-decoration: none;
+  transition: opacity 0.15s ease;
 }
 
 .container a:hover {
+  opacity: 0.8;
   text-decoration: underline;
 }
+
