@@ -1,60 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sean — Game Developer</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background: #0e0e0e;
-            color: #eaeaea;
-        }
-
-        h1, h2 {
-            color: #4fd1ff;
-        }
-
-        .project {
-            margin-bottom: 30px;
-            padding: 15px;
-            background: #1a1a1a;
-            border-radius: 8px;
-        }
-
-        a {
-            color: #6be3ff;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sean — Game Developer</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
+  <div class="nav">
+    <a class="brand" href="index.html">Sean</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<h1>Sean — Game Developer</h1>
+  <div class="container">
+    <h1>Sean — Game Developer</h1>
+    <p class="small">Gameplay / Systems. Unity & Unreal Engine.</p>
 
-<p>
-Unity developer focused on multiplayer systems, procedural generation,
-and gameplay programming.
-</p>
+    <div class="card">
+      <h2>Featured</h2>
+      <p>
+        Portfolio site hosted on GitHub Pages. Use the Projects page for full project breakdowns and links to builds/videos.
+      </p>
+      <div class="links">
+        <a href="projects.html">View Projects →</a>
+      </div>
+    </div>
 
-<h2>Projects</h2>
+    <h2>Highlights</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Multiplayer & Networking</h3>
+        <ul>
+          <li>Player state & inventory sync</li>
+          <li>Voice chat integration</li>
+          <li>Gameplay event replication patterns</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Gameplay Systems</h3>
+        <ul>
+          <li>Interaction loops</li>
+          <li>AI behavior + tuning</li>
+          <li>UI/HUD integration</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Engine Tools</h3>
+        <ul>
+          <li>Debugging & profiling</li>
+          <li>Packaging/build troubleshooting</li>
+          <li>Project structure & maintainability</li>
+        </ul>
+      </div>
+    </div>
 
-<div class="project">
-    <h3>EcoScavengers</h3>
-    <p>
-        Multiplayer Unity project using Netcode, Vivox, and procedural maps.
-    </p>
+    <div class="footer">
+      © <span id="y"></span> Sean • Hosted on GitHub Pages
+    </div>
+  </div>
 
-    <a href="#">Gameplay Video</a><br>
-    <a href="#">Playable Build</a><br>
-    <a href="#">Source Code</a>
-</div>
-
-<div class="project">
-    <h3>Project Name</h3>
-    <p>Description here</p>
-</div>
-
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
