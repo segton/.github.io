@@ -31,7 +31,41 @@
     <h2>Game Jam Projects</h2>
 
     <div class="grid">
+            <div class="card">
+        <h3>Night Delivery</h3>
 
+        <iframe width="100%" height="200"
+          src="https://www.youtube.com/embed/O1LWLQ5TyWQ"
+          frameborder="0"
+          allowfullscreen></iframe>
+
+        <p>
+          Horror game project inspired by late-night delivery tension and atmospheric exploration.
+          Players navigate a dark environment, complete deliveries, and uncover unsettling events
+          while progressing through the experience.
+        </p>
+
+        <b>Gameplay Highlights</b>
+          <ul>
+            <li>Unity ECS-based crowd rendering enabling ~1000 zombies on screen with minimal performance loss</li>
+            <li>Flow-field navigation system for large-scale enemy movement toward the player vehicle</li>
+            <li>LOD-group optimization separating near-interaction zombies from distant simulation agents</li>
+            <li>Physics-based truck controller using Wheel Colliders</li>
+            <li>Close-proximity zombie physics allowing hordes to push and disrupt the vehicle</li>
+            <li>Road network system used for both driving and AI navigation</li>
+            <li>Minimap navigation that calculates shortest paths using weighted road segments</li>
+            <li>Garage upgrade system supporting day/night gameplay variations</li>
+            <li>Reusable traffic systems derived from the driving simulator framework</li>
+            <li>Pause and settings UI with audio control</li>
+          </ul>
+
+        <div class="links">
+          <a href="https://youtu.be/O1LWLQ5TyWQ">Video</a>
+          <a href="https://segton.itch.io/night-delivery">Build</a>
+          <a href="https://github.com/segton/NightDelivery">Repository</a>
+        </div>
+      </div>
+      
       <div class="card">
         <h3>Bizzare Adventure — Global Game Jam Malaysia 2026</h3>
 
@@ -86,9 +120,14 @@
         <iframe width="100%" height="200" src="https://www.youtube.com/embed/O7zhEv7SL14?si=prci3bAcQXuPyPe-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       
         <p>
-          Driving test simulation built in Unity to evaluate adherence to traffic rules.
-          Players must complete a driving route while obeying signals, traffic lights,
-          and speed limits. The system tracks violations and displays a final test report.
+          Unity prototype combining vehicle simulation and large-scale crowd systems.
+          The project experiments with rendering and managing thousands of zombies
+          using Unity Entities, flow-field navigation, and LOD grouping to maintain
+          performance. Players drive a truck across a road network using a physics-based
+          Wheel Collider controller while navigating with a minimap route system that
+          calculates shortest paths across weighted roads. Close-range zombies can
+          physically interact with and push the vehicle, creating dynamic swarm
+          encounters.
         </p>
       
         <b>Systems Implemented</b>
