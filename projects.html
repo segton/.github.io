@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects — Sean</title>
   <link rel="stylesheet" href="assets/style.css" />
+
+  <script>
+function equalizeCardTitlesByGrid() {
+  const grids = document.querySelectorAll('.grid');
+
+  grids.forEach(grid => {
+    const titles = grid.querySelectorAll('.card h3');
+    if (!titles.length) return;
+
+    titles.forEach(title => {
+      title.style.minHeight = '0px';
+    });
+
+    let maxHeight = 0;
+    titles.forEach(title => {
+      maxHeight = Math.max(maxHeight, title.offsetHeight);
+    });
+
+    titles.forEach(title => {
+      title.style.minHeight = maxHeight + 'px';
+    });
+  });
+}
+
+window.addEventListener('load', equalizeCardTitlesByGrid);
+window.addEventListener('resize', equalizeCardTitlesByGrid);
+</script>
+  
 </head>
 <body>
 
