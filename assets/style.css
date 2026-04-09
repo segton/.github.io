@@ -116,4 +116,10 @@ iframe {
 .card p {
   flex-grow: 1;
 }
-
+.card h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* or 3 if needed */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3em; /* matches ~2 lines */
+}
